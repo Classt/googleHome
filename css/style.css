@@ -1,0 +1,88 @@
+/*
+*** HEADER
+*/
+header{
+    padding: 15px 25px 130px;
+    justify-content: flex-end;
+}
+header nav{
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+#user{
+    height: 35px;
+    border-radius: 20px;
+}
+header a:hover{
+    color: #707070de;
+}
+/*
+*** CONTENT
+*/
+section#main{
+    height: 220px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+article#search-box{
+    width: 500px;
+    padding: 12px 25px;
+    align-items: center;
+    border-radius: 30px;
+    border: solid 1px #c7c7c7;
+    justify-content: space-between;
+}
+input#search{
+    width: 400px;
+    border: none;
+    font-size: 1em;
+}
+input.btn{
+    cursor: pointer;
+    font-size: 0.9em;
+    color: #5F6368;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    border: solid 1px #f2f2f2;
+}
+input.btn:hover{
+    color: #252627;
+    border: solid 1px #c7c7c7;
+}
+input.btn:focus{
+    border: solid 1px #1c51ff;
+}
+.btn ~ .btn{
+    margin-left: 10px;
+}
+/*
+*** FOOTER
+*/
+footer{
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    background-color: #f2f2f2;
+}
+footer section{
+    padding: 12px 25px;
+    border-top: solid 1px #c7c7c7;
+}
+#links-box{
+    justify-content: space-between;
+}
+#links-box nav a ~ a{
+    margin-left: 10px;
+}
+/*
+*** SHARED
+*/
+footer, footer a{
+    color: #5F6368;
+}
+header, header nav, section, article, label, #links-box{
+    display: flex;
+}
