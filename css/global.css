@@ -1,10 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: calibri;
-    box-sizing: border-box;
 }
 input{
     outline: none;
@@ -18,4 +18,10 @@ a:hover{
 }
 .img-btn{
     cursor: pointer;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: flex;
 }
