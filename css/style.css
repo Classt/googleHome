@@ -10,21 +10,13 @@ header nav{
     align-items: center;
     justify-content: space-between;
 }
-.user{
+.btn-user{
     border-radius: 100px;
 }
 header nav > a:hover{
     color: #707070de;
 }
 /* GOOGLE APPS */
-#conteiner-google-apps{
-    top: 60px;
-    z-index: 1;
-    right: 25px;
-    position: absolute;
-    border: solid 1px #c7c7c7;
-    box-shadow: 0 5px 10px #00000027;
-}
 #google-apps{
     width: 325px;
     height: 465px;
@@ -59,6 +51,75 @@ header nav > a:hover{
     margin: 25px 0;
     border-color: #fcfcfc63;
 }
+/* USER */
+#user{
+    width: 330px;
+    flex-direction: column;
+    background-color: #fff;
+}
+#user-area1{
+    padding: 20px;
+    height: 140px;
+}
+#img-user{
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border-radius: 100px;
+}
+#img-user span{
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    text-align: center;
+    background-color: #0000005d;
+}
+#info-user{
+    margin-left: 15px;
+    flex-direction: column;
+}
+#info-user a:first-of-type{
+    margin: 3px 0 8px;
+    color: #1c51ff;
+}
+#info-user a:last-of-type{
+    color: #fff;
+    font-weight: bold;
+    width: 130px;
+    padding: 8px 0;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #1c51ffcc;
+}
+#info-user a:last-of-type:hover{
+    background-color: #1c51ff;
+}
+#info-user p:first-of-type{
+    font-weight: bold;
+}
+#info-user p:last-of-type{
+    color: #5F6368;
+}
+#user-area2{
+    padding: 8px 20px;
+    background-color: #f8f8f8;
+    border-top: solid 1px #c7c7c7;
+    justify-content: space-between;
+}
+#user-area2 a{
+    color: #5F6368;
+    padding: 5px 15px;
+    text-decoration: none;
+    background-color: #f8f8f8;
+    border: solid 1px #c7c7c7;
+}
+#user-area2 a:hover{
+    background-color: #fafafa;
+}
 /*
 *** CONTENT
 */
@@ -75,6 +136,10 @@ header nav > a:hover{
     border-radius: 30px;
     border: solid 1px #c7c7c7;
     justify-content: space-between;
+}
+#search-box:hover{
+    border: none;
+    box-shadow: 0 0 8px #0000002c;
 }
 #search{
     width: 350px;
@@ -125,7 +190,15 @@ footer section{
 footer, footer a{
     color: #5F6368;
 }
-header, header nav, #google-apps figure,
-#google-apps, section, article, label, #links-box{
+header, header nav, #google-apps figure, #user, #user-area1
+#google-apps, section, article, label, #links-box, #info-user{
     display: flex;
+}
+#conteiner-google-apps, #conteiner-user{
+    top: 60px;
+    z-index: 1;
+    right: 25px;
+    position: absolute;
+    border: solid 1px #c7c7c7;
+    box-shadow: 0 5px 10px #00000027;
 }

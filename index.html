@@ -15,12 +15,12 @@
         <nav>
             <a href="#">Gmail</a>
             <a href="#">Imagens</a>
-            <img id="btn-google-apps" class="img-btn" onclick="menuApps()" src="img/googleapps.png">
+            <img id="btn-google-apps" class="img-btn" title="Google Apps" onclick="menuApps()" src="img/googleapps.png">
             <section id="conteiner-google-apps" class="hide">
                 <section id="google-apps">
                     <section class="apps-area">
                         <figure>
-                            <img class="user" src="img/user.png">
+                            <img class="btn-user" src="img/user.png">
                             <figcaption>Conta</figcaption>
                         </figure>
                         <figure>
@@ -122,7 +122,27 @@
                     <a href="#">Outros produtos do Google</a>
                 </section>
             </section>
-            <img class="user img-btn" height="35" src="img/user.png">
+            <img class="btn-user img-btn" title="Conta do Google" onclick="menuUser()" height="35" src="img/user.png">
+            <section id="conteiner-user" class="hide">
+                <section id="user">
+                    <section id="user-area1">
+                        <section id="img-user">
+                            <img class="btn-user" title="Perfil" src="img/userg.png" height="100">
+                            <span>Alterar</span>
+                        </section>
+                        <section id="info-user">
+                            <p>Maria Aleck</p>
+                            <p>maria.aleck69@gmail.com</p>
+                            <a href="#">Privacidade</a>
+                            <a href="#">Conta do Google</a>
+                        </section>
+                    </section>
+                    <section id="user-area2">
+                        <a href="#">Adicionar conta</a>
+                        <a href="#">Sair</a>
+                    </section>
+                </section>
+            </section>
         </nav>
     </header>
 
@@ -132,9 +152,9 @@
             <label for="search">
                 <img src="img/search.png">
             </label>
-            <input id="search" type="text" autofocus>
-            <img class="img-btn" src="img/keyboard.png">
-            <img class="img-btn" src="img/microphone.png">
+            <input id="search" title="Pesquisar" type="text" autofocus>
+            <img class="img-btn" title="Ferramentas de inserção de texto" src="img/keyboard.png">
+            <img class="img-btn" title="Pesquisa por voz" src="img/microphone.png">
         </article>
         <article>
             <input class="btn" type="submit" value="Pesquisa Google">
